@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra / Pago - BMW</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <div class="contenedor-pago">
+       
+        <h2 class="titulo-pago">FINALIZAR COMPRA / PAGO</h2>
+
+       
+        <div class="resumen-vehiculo">
+            <p class="texto-resumen">Vehículo seleccionado: BMW<br><span>Personalizado</span></p>
+            
+            <div class="total-pagar">
+                Total a pagar: $<br>
+                <span class="valor-total">185.000.000 COP</span>
+            </div>
+        </div>
+
+        <form class="formulario-pago">
+            <div class="campo">
+                <label for="titular">Nombre titular:</label>
+                <input type="text" id="titular" name="titular">
+            </div>
+
+            <div class="campo">
+                <label for="tarjeta">Número de tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta">
+            </div>
+
+            <div class="fila-doble">
+                <div class="campo pequeño">
+                    <label for="vencimiento">Vencimiento:</label>
+                    <input type="text" id="vencimiento" placeholder="MM/AA">
+                </div>
+                <div class="campo pequeño">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv">
+                </div>
+            </div>
+
+            <button type="submit" class="boton-pagar">CONFIRMAR PAGO</button>
+        </form>
+    </div>
+</body>
+</html>
