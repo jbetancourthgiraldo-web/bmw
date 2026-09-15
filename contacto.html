@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW | Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BMW</div>
+
+    <nav>
+        <a href="index.html">INICIO</a>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="nosotros.html">MÁS SOBRE NOSOTROS</a>
+        <a href="modelos.html">MODELOS</a>
+        <a href="login.html">USUARIOS</a>
+    </nav>
+</header>
+
+<section>
+
+    <div class="container">
+
+        <div class="title">
+            <h1>Contacto</h1>
+            <p>Comunícate con nosotros.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div>
+
+                <div class="contact-item">
+                    <h3>Teléfono</h3>
+                    <p>+57 300 000 0000</p>
+                </div>
+
+                <br>
+
+                <div class="contact-item">
+                    <h3>Correo</h3>
+                    <p>contacto@bmwproyecto.com</p>
+                </div>
+
+                <br>
+
+                <div class="contact-item">
+                    <h3>Ubicación</h3>
+                    <p>Manizales, Colombia</p>
+                </div>
+
+            </div>
+
+            <div class="form-box">
+
+                <h2>Envíanos un mensaje</h2>
+
+                <label>Nombre</label>
+                <input type="text"
+                       placeholder="Nombre completo">
+
+                <label>Correo</label>
+                <input type="email"
+                       placeholder="Correo electrónico">
+
+                <label>Mensaje</label>
+                <textarea rows="5"
+                          placeholder="Escribe tu mensaje"></textarea>
+
+                <button onclick="enviar()">
+                    Enviar mensaje
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Proyecto Integrador BMW
+</footer>
+
+<script>
+
+function enviar() {
+
+    alert("Mensaje enviado correctamente.");
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BMW | Iniciar sesión</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+ 
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        BMW
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            INICIO
+        </a>
+
+        <a href="contacto.html">
+            CONTACTO
+        </a>
+
+        <a href="nosotros.html">
+            MÁS SOBRE NOSOTROS
+        </a>
+
+        <a href="modelos.html">
+            MODELOS
+        </a>
+
+        <a href="login.html">
+            USUARIOS
+        </a>
+
+    </nav>
+
+</header>
+
+
+<div class="form-box">
+
+    <div class="user-icon">
+        ♙
+    </div>
+
+    <h2>
+        Iniciar sesión
+    </h2>
+
+
+    <label>
+        Usuario
+    </label>
+
+    <input
+        id="usuario"
+        type="text"
+        placeholder="Usuario">
+
+
+    <label>
+        Contraseña
+    </label>
+
+    <input
+        id="clave"
+        type="password"
+        placeholder="Contraseña">
+
+
+    <button onclick="entrar()">
+        Ingresar
+    </button>
+
+
+    <div class="links">
+
+        <a href="registro.html">
+            ¿No tienes una cuenta?
+            Regístrate
+        </a>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    © 2026 Proyecto Integrador BMW
+
+</footer>
+
+
+<script>
+
+function entrar() {
+
+    let usuario =
+        document.getElementById("usuario").value;
+
+    let clave =
+        document.getElementById("clave").value;
+
+
+    if (usuario === "" || clave === "") {
+
+        alert(
+            "Completa todos los campos."
+        );
+
+    } else {
+
+        alert(
+            "Inicio de sesión correcto."
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
