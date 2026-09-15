@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    height: 78px;
+    background: #050505;
+    border-bottom: 2px solid #168bd4;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    gap: 45px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #168bd4;
+}
+
+.form-box {
+    width: 380px;
+    margin: 90px auto;
+    padding: 35px;
+    background: white;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 10px 35px #0008;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.user-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #777;
+    margin: -70px auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    color: white;
+}
+
+.form-box label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 13px;
+    background: #19bcb6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #168bd4;
+    text-decoration: none;
+}
+
+footer {
+    background: #050505;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+}
