@@ -10,39 +10,26 @@
 
     <title>BMW | Nosotros</title>
 
-   <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo">
-        BMW
-    </div>
+    <div class="logo">BMW</div>
 
     <nav>
-
-        <a href="index.html">
-            INICIO
-        </a>
-
-        <a href="contacto.html">
-            CONTACTO
-        </a>
-
-        <a href="nosotros.html">
-            MÁS SOBRE NOSOTROS
-        </a>
-
-        <a href="modelos.html">
-            MODELOS
-        </a>
-
-        <a href="login.html">
-            USUARIOS
-        </a>
-
+        <a href="index.html">INICIO</a>
+        <a href="modelos.html">MODELOS</a>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="login.html">INICIO DE SESION</a>
+        <a href="muestras.html">TODOS LOS MODELOS</a>
+        <a href="creatucoche.html">VALORACION DEL COCHE</a>
+        <a href="redessociales.html">REDES SOCIALES</a>
+        <a href="pago.html">FINALIZAR LA COMPRA</a>
     </nav>
 
 </header>
@@ -52,37 +39,205 @@
 
     <div class="container">
 
+       
+
         <div class="info">
 
-            <img src="img/bmw.jpg">
+            <img src="img/bmw.jpg" alt="Concesionario BMW">
 
             <div>
 
-                <h1>
-                    Más sobre nosotros
-                </h1>
+                <h1>Más sobre nosotros</h1>
 
                 <p>
-                    Este proyecto integrador presenta
-                    una propuesta de sitio web inspirada
-                    en BMW, con información de modelos,
-                    contacto y acceso de usuarios.
+                    Somos un concesionario especializado en vehículos BMW,
+                    donde ofrecemos información sobre nuestros modelos,
+                    atención personalizada y diferentes opciones para
+                    nuestros clientes.
                 </p>
 
                 <p>
-                    La página utiliza HTML, CSS y
-                    JavaScript para construir una
-                    experiencia sencilla y moderna.
+                    Nuestro proyecto integra HTML, CSS y JavaScript para
+                    crear una experiencia moderna, sencilla y enfocada
+                    en la compra de vehículos.
                 </p>
-
-                <a class="btn"
-                   href="modelos.html">
-
-                    Conocer modelos
-
-                </a>
 
             </div>
+
+        </div>
+
+
+   
+
+        <div class="formulario">
+
+            <h2>Solicita información</h2>
+
+            <p>
+                Déjanos tus datos y nos pondremos en contacto contigo
+                para brindarte información sobre el vehículo que buscas.
+            </p>
+
+            <form>
+
+                <div class="campo">
+
+                    <label for="nombre">Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@gmail.com"
+                        required>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="telefono">Número de teléfono</label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="300 000 0000"
+                        required>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="modelo">Modelo de interés</label>
+
+                    <select id="modelo" name="modelo" required>
+
+                        <option value="">
+                            Selecciona un modelo
+                        </option>
+
+                        <option value="serie-1">
+                            BMW Serie 1
+                        </option>
+
+                        <option value="serie-3">
+                            BMW Serie 3
+                        </option>
+
+                        <option value="serie-5">
+                            BMW Serie 5
+                        </option>
+
+                        <option value="x1">
+                            BMW X1
+                        </option>
+
+                        <option value="x3">
+                            BMW X3
+                        </option>
+
+                        <option value="x5">
+                            BMW X5
+                        </option>
+
+                        <option value="i4">
+                            BMW i4
+                        </option>
+
+                        <option value="ix">
+                            BMW iX
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="presupuesto">
+                        Presupuesto aproximado
+                    </label>
+
+                    <select id="presupuesto" name="presupuesto">
+
+                        <option value="">
+                            Selecciona un rango
+                        </option>
+
+                        <option value="100-200">
+                            $100 - $200 millones
+                        </option>
+
+                        <option value="200-300">
+                            $200 - $300 millones
+                        </option>
+
+                        <option value="300-400">
+                            $300 - $400 millones
+                        </option>
+
+                        <option value="400+">
+                            Más de $400 millones
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="mensaje">
+                        ¿Qué estás buscando?
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Cuéntanos qué vehículo estás buscando...">
+                    </textarea>
+
+                </div>
+
+
+                <div class="check">
+
+                    <input
+                        type="checkbox"
+                        id="terminos"
+                        name="terminos"
+                        required>
+
+                    <label for="terminos">
+                        Acepto ser contactado para recibir información.
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="btn">
+                    SOLICITAR INFORMACIÓN
+                </button>
+
+            </form>
 
         </div>
 
@@ -97,5 +252,7 @@
 
 </footer>
 
+
 </body>
+
 </html>
