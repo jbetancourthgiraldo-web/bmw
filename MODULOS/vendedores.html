@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedores BMW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand"> <a class="navbar-item">
+                <p class="title is-3 is-spaced">vendedores</p>
+            </a> </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons"> <a class="button is-primary" href="../index.html"> <strong>home</strong> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-6">
+                    <div class="box">
+                        <h1 class="title has-text-centered"> Registro de Vendedores </h1>
+                        <div>
+                            <div class="field"> <label class="label">Nombre Completo</label>
+                                <div class="control"> <input class="input" type="text" name="nombre_vendedor"
+                                        placeholder="Ingrese el nombre" id="nombre_vendedor"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Documento</label>
+                                <div class="control"> <input class="input" type="text" name="documento_vendedor"
+                                        placeholder="Ingrese el documento" id="documento_vendedor"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Teléfono</label>
+                                <div class="control"> <input class="input" type="tel" name="telefono_vendedor"
+                                        placeholder="Ingrese el teléfono" id="telefono_vendedor"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Correo Electrónico</label>
+                                <div class="control"> <input class="input" type="email" name="correo_vendedor"
+                                        placeholder="Ingrese el correo" id="correo_vendedor"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Cargo</label>
+                                <div class="control"> <input class="input" type="text" name="cargo_vendedor"
+                                        placeholder="Ingrese el cargo" id="cargo_vendedor"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Fecha de Ingreso</label>
+                                <div class="control"> <input class="input" type="date" name="fecha_ingreso"
+                                        id="fecha_ingreso"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Estado</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth"> <select name="estado_vendedor"
+                                            id="estado_vendedor">
+                                            <option value="">Seleccione un estado</option>
+                                            <option value="activo">Activo</option>
+                                            <option value="inactivo">Inactivo</option>
+                                        </select> </div>
+                                </div>
+                            </div>
+                            <div class="field mt-5">
+                                <div class="control"> <button class="button is-primary is-fullwidth" id="btnGuardar">
+                                        Guardar Vendedor </button> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/vendedores.js"></script>
+</body>
+
+</html>

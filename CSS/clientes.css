@@ -40,6 +40,41 @@ nav a:hover {
     color: #168bd4;
 }
 
+.hero {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(#0006, #000b),
+        url("../img/bmw.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #168bd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
 .container {
     width: 90%;
     max-width: 1100px;
@@ -47,16 +82,16 @@ nav a:hover {
 }
 
 section {
-    padding: 65px 0;
+    padding: 60px 0;
 }
 
 .title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
-.title h1 {
-    font-size: 38px;
+.title h2 {
+    font-size: 35px;
 }
 
 .title p {
@@ -77,32 +112,21 @@ section {
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 190px;
     object-fit: cover;
 }
 
 .content {
-    padding: 25px;
+    padding: 20px;
 }
 
 .content h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .content p {
     color: #aaa;
     line-height: 1.6;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 12px 24px;
-    background: #168bd4;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
 }
 
 footer {

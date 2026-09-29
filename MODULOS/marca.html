@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca BMW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand"> <a class="navbar-item">
+                <p class="title is-3 is-spaced">marca</p>
+            </a> </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons"> <a class="button is-primary" href="../index.html"> <strong>home</strong> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-6">
+                    <div class="box">
+                        <h1 class="title has-text-centered"> Registro de Marca </h1>
+                        <div>
+                            <div class="field"> <label class="label">Nombre de la Marca</label>
+                                <div class="control"> <input class="input" type="text" name="nombre_marca"
+                                        placeholder="Ingrese el nombre de la marca" id="nombre_marca"> </div>
+                            </div>
+                            <div class="field"> <label class="label">País de Origen</label>
+                                <div class="control"> <input class="input" type="text" name="pais_origen"
+                                        placeholder="Ingrese el país de origen" id="pais_origen"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Año de Fundación</label>
+                                <div class="control"> <input class="input" type="number" name="anio_fundacion"
+                                        placeholder="Ingrese el año" id="anio_fundacion"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Tipo de Vehículos</label>
+                                <div class="control"> <input class="input" type="text" name="tipo_vehiculos"
+                                        placeholder="Ingrese el tipo de vehículos" id="tipo_vehiculos"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Descripción</label>
+                                <div class="control"> <textarea class="textarea" name="descripcion_marca"
+                                        placeholder="Ingrese una descripción" id="descripcion_marca"
+                                        rows="2"></textarea> </div>
+                            </div>
+                            <div class="field"> <label class="label">Página Web</label>
+                                <div class="control"> <input class="input" type="url" name="pagina_web"
+                                        placeholder="Ingrese la página web" id="pagina_web"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Estado</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth"> <select name="estado_marca" id="estado_marca">
+                                            <option value="">Seleccione un estado</option>
+                                            <option value="activa">Activa</option>
+                                            <option value="inactiva">Inactiva</option>
+                                        </select> </div>
+                                </div>
+                            </div>
+                            <div class="field mt-5">
+                                <div class="control"> <button class="button is-primary is-fullwidth" id="btnGuardar">
+                                        Guardar Marca </button> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/marca.js"></script>
+</body>
+
+</html>

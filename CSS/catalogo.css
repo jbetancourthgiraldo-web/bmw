@@ -47,39 +47,67 @@ nav a:hover {
 }
 
 section {
-    padding: 80px 0;
+    padding: 65px 0;
 }
 
-.info {
+.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.title h1 {
+    font-size: 38px;
+}
+
+.title p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 45px;
-    align-items: center;
+    gap: 35px;
 }
 
-.info img {
-    width: 100%;
-    border-radius: 5px;
+.contact-item {
+    background: #222;
+    padding: 25px;
+    border-left: 3px solid #168bd4;
 }
 
-.info h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-.info p {
+.contact-item p {
     color: #aaa;
-    line-height: 1.8;
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 13px 25px;
-    background: #168bd4;
+.form-box {
+    background: white;
+    color: #222;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.form-box h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: #19bcb6;
     color: white;
-    text-decoration: none;
-    border-radius: 4px;
+    cursor: pointer;
 }
 
 footer {

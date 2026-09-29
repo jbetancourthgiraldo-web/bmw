@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas BMW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand"> <a class="navbar-item">
+                <p class="title is-3 is-spaced">citas</p>
+            </a> </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons"> <a class="button is-primary" href="../index.html"> <strong>home</strong> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-6">
+                    <div class="box">
+                        <h1 class="title has-text-centered"> Registro de Citas </h1>
+                        <div>
+                            <div class="field"> <label class="label">Nombre del Cliente</label>
+                                <div class="control"> <input class="input" type="text" name="nombre_cliente"
+                                        placeholder="Ingrese el nombre" id="nombre_cliente"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Tipo de Cita</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth"> <select name="tipo_cita" id="tipo_cita">
+                                            <option value="">Seleccione una cita</option>
+                                            <option value="prueba">Prueba de conducción</option>
+                                            <option value="asesoria">Asesoría comercial</option>
+                                            <option value="mantenimiento">Mantenimiento</option>
+                                            <option value="revision">Revisión</option>
+                                            <option value="compra">Compra de vehículo</option>
+                                        </select> </div>
+                                </div>
+                            </div>
+                            <div class="field"> <label class="label">Fecha</label>
+                                <div class="control"> <input class="input" type="date" name="fecha_cita"
+                                        id="fecha_cita"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Hora</label>
+                                <div class="control"> <input class="input" type="time" name="hora_cita" id="hora_cita">
+                                </div>
+                            </div>
+                            <div class="field"> <label class="label">Teléfono</label>
+                                <div class="control"> <input class="input" type="tel" name="telefono_cliente"
+                                        placeholder="Ingrese el teléfono" id="telefono_cliente"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Correo Electrónico</label>
+                                <div class="control"> <input class="input" type="email" name="correo_cliente"
+                                        placeholder="Ingrese el correo" id="correo_cliente"> </div>
+                            </div>
+                            <div class="field"> <label class="label">Observaciones</label>
+                                <div class="control"> <textarea class="textarea" name="observaciones"
+                                        placeholder="Ingrese observaciones" id="observaciones" rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="field mt-5">
+                                <div class="control"> <button class="button is-primary is-fullwidth" id="btnGuardar">
+                                        Guardar Cita </button> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/citas.js"></script>
+</body>
+
+</html>
